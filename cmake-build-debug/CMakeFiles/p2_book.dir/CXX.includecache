@@ -11,6 +11,10 @@
 /home/eddy/School/Data Structures/Week3/p2_book/main.cpp
 iostream
 -
+fstream
+-
+string
+-
 Book.h
 /home/eddy/School/Data Structures/Week3/p2_book/Book.h
 
