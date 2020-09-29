@@ -45,6 +45,7 @@ void Book::add(string isbn, string author, string title, string year) {
         resize();
 
     list[numElements] = new string[ITEMS];
+//    cout << "isbn " << isbn << " author " << author << endl;
     list[numElements][0] = isbn;
     list[numElements][1] = author;
     list[numElements][2] = title;

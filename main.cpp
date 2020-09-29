@@ -42,13 +42,15 @@ void readFile() {
                 title = str;
             else if (counter == 2) {
                 year = str;
-                b.add(to_string(isbn), author, title, year);
+                cout << "year " << year << endl;
+                string isbnString = to_string(isbn);
+                b.add(isbnString, author, title, year);
                 isbn++;
                 counter = -1;
             }
             counter++;
         }
-        printList(b);
+//        printList(b);
     } else {
         cout << "ERROR: cannot open file.\n";
     }
