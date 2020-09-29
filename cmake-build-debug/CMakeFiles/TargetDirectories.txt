@@ -1,0 +1,3 @@
+/home/eddy/School/Data Structures/Week3/p2_book/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/eddy/School/Data Structures/Week3/p2_book/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/eddy/School/Data Structures/Week3/p2_book/cmake-build-debug/CMakeFiles/p2_book.dir

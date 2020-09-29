@@ -1,0 +1,4 @@
+/home/eddy/snap/clion-2020.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/eddy/School/Data Structures/Week3/p2_book"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/eddy/School/Data Structures/Week3/p2_book/cmake-build-debug

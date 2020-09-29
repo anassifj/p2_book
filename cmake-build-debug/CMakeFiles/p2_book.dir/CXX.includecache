@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eddy/School/Data Structures/Week3/p2_book/Book.h
+
+/home/eddy/School/Data Structures/Week3/p2_book/main.cpp
+iostream
+-
+Book.h
+/home/eddy/School/Data Structures/Week3/p2_book/Book.h
+
