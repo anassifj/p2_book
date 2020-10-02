@@ -8,7 +8,6 @@ using namespace std;
 void printList(Book b) {
     for (int i = 0; i < b.size(); i++) {
         for (int j = 0; j < 3; j++) {
-//            cout << i;
             cout << b.list[b.get(to_string(i))][j] << ", ";
         }
         cout << b.list[b.get(to_string(i))][3];
@@ -49,7 +48,7 @@ void readFile() {
                     string isbnString = to_string(isbn);
                     b.add(isbnString, author, title, year);
                     isbn++;
-                    counter = -1;
+                    counter = -1;  // -1 so it becomes 0 at line end
                 }
                 counter++;
             }

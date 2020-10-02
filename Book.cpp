@@ -10,14 +10,14 @@ using namespace std;
 Book::Book(int initialSize) {
     capacity = initialSize;
     list = new string*[capacity];
-    numElements = 0;
+    bookId = 0;
 }
 
 Book::Book(const Book &other) {
     capacity = other.capacity;
     list = new string*[capacity];
-    numElements = other.numElements;
-    for (int i = 0; i < numElements; i++)
+    bookId = other.bookId;
+    for (int i = 0; i < bookId; i++)
         list[i] = other.list[i];
 }
 
@@ -28,8 +28,8 @@ Book &Book::operator=(const Book &rhs) {
 
         capacity = rhs.capacity;
         list = new string*[capacity];
-        numElements = rhs.numElements;
-        for (int i = 0; i < numElements; i++)
+        bookId = rhs.bookId;
+        for (int i = 0; i < bookId; i++)
             list[i] = rhs.list[i];
     }
 
@@ -41,24 +41,24 @@ Book::~Book() {
 }
 
 void Book::add(string isbn, string author, string title, string year) {
-    if (capacity == numElements)
+    if (capacity == bookId)
         resize();
 
-    list[numElements] = new string[ITEMS];
+    list[bookId] = new string[ITEMS];
 //    cout << "isbn " << isbn << " author " << author << endl;
-    list[numElements][0] = isbn;
-    list[numElements][1] = author;
-    list[numElements][2] = title;
-    list[numElements][3] = year;
-    numElements++;
+    list[bookId][0] = isbn;
+    list[bookId][1] = author;
+    list[bookId][2] = title;
+    list[bookId][3] = year;
+    bookId++;
 }
 
 int Book::size() const {
-    return numElements;
+    return bookId;
 }
 
 int Book::get(string search) const {
-    for (int i = 0; i < numElements; i++) {
+    for (int i = 0; i < bookId; i++) {
         if (list[i][0] == search)
             return i;
     }
@@ -67,7 +67,7 @@ int Book::get(string search) const {
 
 void Book::resize() {
     string **newList = new string*[capacity];
-    for (int i = 0; i < numElements; i++)
+    for (int i = 0; i < bookId; i++)
         for (int j = 0; j < ITEMS; j++)
             newList[i][j] = list[i][j];
     delete[] list;

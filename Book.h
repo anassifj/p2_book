@@ -21,7 +21,7 @@ public:
 private:
     const int ITEMS = 4; // Number of items for each book
     int capacity;  // how many elements can be in list
-    int numElements = -1; // how may add's have happened
+    int bookId = -1; // how may add's have happened
 
     void resize();
 };
