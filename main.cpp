@@ -23,9 +23,8 @@ void readFile() {
     string str, item, filepath;
     ifstream inFile;
     string filename;
-    filename = "/home/eddy/Downloads/books.txt"; // For testing
-//    cout << "Enter book file: ";
-//    cin >> filename;
+    cout << "Enter book file: ";
+    cin >> filename;
     cout << filename << endl;
     inFile.open(filename);
 
